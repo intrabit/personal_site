@@ -1,0 +1,53 @@
+body {
+	background-color: black;
+	background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+	height: 100vh;
+	color: white;
+	font: 1.3rem Inconsolata, monospace;
+	text-shadow: 0 0 5px #C8C8C8;
+	overflow: hidden;
+}
+
+#terminal {
+	width: 100%;
+	height: 800px;
+	display: block;
+	overflow-y: hidden;
+}
+
+p {
+	margin: 0;
+}
+
+.consoleText {
+	color: white;
+	font: 1.3rem Inconsolata, monospace;
+	text-shadow: 0 0 5px #C8C8C8;
+}
+
+#consoleInput {
+	background: rgba(204, 204, 204, 0);
+	border: none;
+	width: 80%;
+	caret-color: white;
+}
+
+#inputSection p {
+	display: inline-block;
+	color: orange;
+}
+
+#consoleInput:focus {
+    outline: none;
+}
+
+#crtEffect {
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-image: repeating-linear-gradient(rgba(0,0,0,0.2), rgba(100,100,100,0.2) 3px);
+	left: 0;
+	top: 0;
+}
+
